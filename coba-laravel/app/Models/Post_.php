@@ -34,4 +34,9 @@ class Post
 
     }
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
 }
