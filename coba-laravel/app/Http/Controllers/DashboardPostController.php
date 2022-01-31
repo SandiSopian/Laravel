@@ -136,6 +136,7 @@ class DashboardPostController extends Controller
      */
     public function destroy(Post $post)
     {
+        // untuk menghapus data image pada storage setelah post dihapus
         if($post->image){
                 Storage::delete($post->image);
             }
